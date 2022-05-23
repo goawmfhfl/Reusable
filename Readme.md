@@ -21,4 +21,47 @@ recursively watch directories file
   "sass": "node-sass -wr styles/main.scss ./style.css"
 
 
+✅
+(선)jpg === (후)jpeg 호환가능
 
+
+raster image vs vector image
+확대할때 깨진다 -> raster image(jpg, png 권장)
+확대할때 깨지지 않는다 -> vector image(svg 권장)
+
+✅
+이미지의 용량이 크다. -> 웹사이트의 로드가 느려진다 -> 사용성이 구리다
+프론트엔드 개발자는 퍼포먼스에 해를끼치는 요소를 없앨 줄 알아야 한다.
+raster image -> jpg vs png
+
+1. 투명 배경 지원
+
+jpg: 투명 배경 지원하지 않는다
+png: 투명 배경을 지원한다.
+
+2. 이미지 압축 방식
+
+jpg: 압축이 잘된다 (용량이 적다) -> 압축이 될 수록 이미지의 퀄리티가 떨어진다.
+png: 압축이 잘안된다 (용량이 크다) 압축이 될 수록 이미지 퀄리티가 크게 떨어지지 않는다.
+
+어떻게해야해?
+
+- 퀄리티의 품질에 따라서 이미지를 정할 줄 알아야 한다.
+
+3. webp
+구글에서 만든 이미지 파일.
+
+
+
+
+✅ Scalable vector graphics
+- 아주 깔끔한 이미지 파일을 쓸 수 있다.
+- 사이즈가 변경이 되더라도 일정한 디자인을 유지하고있다.
+- font
+- 용량이 다른 파일에 비해서 상대적으로 작은 편이다.
+- 이미지 크기를 다르게 할 경우 png -> byte가 커진다. svg -> 일정한 크기를 유지한다.
+
+bitmap -> 픽셀 크기가 많아진다면 용량이 커진다
+vector -> 크기를 유지한다.
+
+Logo, Icon -> SVG
