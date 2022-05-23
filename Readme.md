@@ -65,3 +65,16 @@ bitmap -> 픽셀 크기가 많아진다면 용량이 커진다
 vector -> 크기를 유지한다.
 
 Logo, Icon -> SVG
+
+
+
+
+svg 사용하는 방법
+1. img tag에 src를 입력하는 방법
+2. css Background로 사용하는 방법
+3. svg 사용하는 방법
+currentColor -> 부모 Color를 상속받을 수 있다.
+<svg width="24" height="25" viewBox="0 0 24 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+
+4. svg파일 최적화 하는 방법
+icomoonApp 접속 -> import -> 하단 Navigation 오른쪽 하단-> 다른거 설정 필요없이 select를 i로 변경 -> 다운롣,ㅡ
